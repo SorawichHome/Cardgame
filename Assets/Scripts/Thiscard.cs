@@ -21,7 +21,7 @@ public class Thiscard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        thiscard[0] = CardDatabase.CardList[thisid];
+        thiscard.Add(CardDatabase.CardList[thisid]);
     }
 
     // Update is called once per frame
