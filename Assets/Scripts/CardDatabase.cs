@@ -6,7 +6,7 @@ public class CardDatabase : MonoBehaviour
 {
     public static List<Card> CardList = new List<Card>();
 
-    private void Awake()
+    void Awake()
     {
         CardList.Add(new Card(0, "Fire", "Red", "1", 1));
         CardList.Add(new Card(1, "Fire", "Red", "2", 2));
@@ -23,7 +23,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(12, "Fire", "Red", "E", 0));
         CardList.Add(new Card(13, "Fire", "Red", "T", 0));
         CardList.Add(new Card(14, "Fire", "Red", "B", 0));
-        //
         CardList.Add(new Card(15, "Fire", "Blue", "1", 1));
         CardList.Add(new Card(16, "Fire", "Blue", "2", 2));
         CardList.Add(new Card(17, "Fire", "Blue", "3", 3));
@@ -39,7 +38,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(27, "Fire", "Blue", "E", 0));
         CardList.Add(new Card(28, "Fire", "Blue", "T", 0));
         CardList.Add(new Card(28, "Fire", "Blue", "B", 0));
-        //
         CardList.Add(new Card(29, "Fire", "Brown", "1", 1));
         CardList.Add(new Card(30, "Fire", "Brown", "2", 2));
         CardList.Add(new Card(31, "Fire", "Brown", "3", 3));
@@ -55,7 +53,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(41, "Fire", "Brown", "E", 0));
         CardList.Add(new Card(42, "Fire", "Brown", "T", 0));
         CardList.Add(new Card(43, "Fire", "Brown", "B", 0));
-        //
         CardList.Add(new Card(44, "Fire", "Yellow", "1", 1));
         CardList.Add(new Card(45, "Fire", "Yellow", "2", 2));
         CardList.Add(new Card(46, "Fire", "Yellow", "3", 3));
@@ -71,7 +68,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(56, "Fire", "Yellow", "E", 0));
         CardList.Add(new Card(57, "Fire", "Yellow", "T", 0));
         CardList.Add(new Card(58, "Fire", "Yellow", "B", 0));
-        //
         CardList.Add(new Card(59, "Fire", "Black", "1", 1));
         CardList.Add(new Card(60, "Fire", "Black", "2", 2));
         CardList.Add(new Card(61, "Fire", "Black", "3", 3));
@@ -87,7 +83,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(72, "Fire", "Black", "E", 0));
         CardList.Add(new Card(73, "Fire", "Black", "T", 0));
         CardList.Add(new Card(74, "Fire", "Black", "B", 0));
-        //
         CardList.Add(new Card(75, "Water", "Red", "1", 1));
         CardList.Add(new Card(76, "Water", "Red", "2", 2));
         CardList.Add(new Card(77, "Water", "Red", "3", 3));
@@ -103,7 +98,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(87, "Water", "Red", "E", 0));
         CardList.Add(new Card(88, "Water", "Red", "T", 0));
         CardList.Add(new Card(89, "Water", "Red", "B", 0));
-        //
         CardList.Add(new Card(90, "Water", "Blue", "1", 1));
         CardList.Add(new Card(91, "Water", "Blue", "2", 2));
         CardList.Add(new Card(92, "Water", "Blue", "3", 3));
@@ -119,7 +113,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(102, "Water", "Blue", "E", 0));
         CardList.Add(new Card(103, "Water", "Blue", "T", 0));
         CardList.Add(new Card(104, "Water", "Blue", "B", 0));
-        //
         CardList.Add(new Card(105, "Water", "Brown", "1", 1));
         CardList.Add(new Card(106, "Water", "Brown", "2", 2));
         CardList.Add(new Card(107, "Water", "Brown", "3", 3));
@@ -135,7 +128,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(117, "Water", "Brown", "E", 0));
         CardList.Add(new Card(118, "Water", "Brown", "T", 0));
         CardList.Add(new Card(119, "Water", "Brown", "B", 0));
-        //
         CardList.Add(new Card(120, "Water", "Yellow", "1", 1));
         CardList.Add(new Card(121, "Water", "Yellow", "2", 2));
         CardList.Add(new Card(122, "Water", "Yellow", "3", 3));
@@ -167,7 +159,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(147, "Water", "Black", "E", 0));
         CardList.Add(new Card(148, "Water", "Black", "T", 0));
         CardList.Add(new Card(149, "Water", "Black", "B", 0));
-        //
         CardList.Add(new Card(150, "Earth", "Red", "1", 1));
         CardList.Add(new Card(151, "Earth", "Red", "2", 2));
         CardList.Add(new Card(152, "Earth", "Red", "3", 3));
@@ -183,7 +174,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(162, "Earth", "Red", "E", 0));
         CardList.Add(new Card(163, "Earth", "Red", "T", 0));
         CardList.Add(new Card(164, "Earth", "Red", "B", 0));
-        //
         CardList.Add(new Card(165, "Earth", "Blue", "1", 1));
         CardList.Add(new Card(166, "Earth", "Blue", "2", 2));
         CardList.Add(new Card(167, "Earth", "Blue", "3", 3));
@@ -199,7 +189,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(177, "Earth", "Blue", "E", 0));
         CardList.Add(new Card(178, "Earth", "Blue", "T", 0));
         CardList.Add(new Card(179, "Earth", "Blue", "B", 0));
-        //
         CardList.Add(new Card(180, "Earth", "Brown", "1", 1));
         CardList.Add(new Card(181, "Earth", "Brown", "2", 2));
         CardList.Add(new Card(182, "Earth", "Brown", "3", 3));
@@ -215,7 +204,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(192, "Earth", "Brown", "E", 0));
         CardList.Add(new Card(193, "Earth", "Brown", "T", 0));
         CardList.Add(new Card(194, "Earth", "Brown", "B", 0));
-        //
         CardList.Add(new Card(195, "Earth", "Yellow", "1", 1));
         CardList.Add(new Card(196, "Earth", "Yellow", "2", 2));
         CardList.Add(new Card(197, "Earth", "Yellow", "3", 3));
@@ -231,7 +219,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(207, "Earth", "Yellow", "E", 0));
         CardList.Add(new Card(208, "Earth", "Yellow", "T", 0));
         CardList.Add(new Card(209, "Earth", "Yellow", "B", 0));
-        //
         CardList.Add(new Card(210, "Earth", "Black", "1", 1));
         CardList.Add(new Card(211, "Earth", "Black", "2", 2));
         CardList.Add(new Card(212, "Earth", "Black", "3", 3));
@@ -247,7 +234,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(222, "Earth", "Black", "E", 0));
         CardList.Add(new Card(223, "Earth", "Black", "T", 0));
         CardList.Add(new Card(224, "Earth", "Black", "B", 0));
-        //
         CardList.Add(new Card(225, "Thunder", "Red", "1", 1));
         CardList.Add(new Card(226, "Thunder", "Red", "2", 2));
         CardList.Add(new Card(227, "Thunder", "Red", "3", 3));
@@ -263,7 +249,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(237, "Thunder", "Red", "E", 0));
         CardList.Add(new Card(238, "Thunder", "Red", "T", 0));
         CardList.Add(new Card(239, "Thunder", "Red", "B", 0));
-        //
         CardList.Add(new Card(240, "Thunder", "Blue", "1", 1));
         CardList.Add(new Card(241, "Thunder", "Blue", "2", 2));
         CardList.Add(new Card(242, "Thunder", "Blue", "3", 3));
@@ -279,7 +264,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(252, "Thunder", "Blue", "E", 0));
         CardList.Add(new Card(253, "Thunder", "Blue", "T", 0));
         CardList.Add(new Card(254, "Thunder", "Blue", "B", 0));
-        //
         CardList.Add(new Card(255, "Thunder", "Brown", "1", 1));
         CardList.Add(new Card(256, "Thunder", "Brown", "2", 2));
         CardList.Add(new Card(257, "Thunder", "Brown", "3", 3));
@@ -295,7 +279,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(267, "Thunder", "Brown", "E", 0));
         CardList.Add(new Card(268, "Thunder", "Brown", "T", 0));
         CardList.Add(new Card(269, "Thunder", "Brown", "B", 0));
-        //
         CardList.Add(new Card(270, "Thunder", "Yellow", "1", 1));
         CardList.Add(new Card(271, "Thunder", "Yellow", "2", 2));
         CardList.Add(new Card(272, "Thunder", "Yellow", "3", 3));
@@ -311,7 +294,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(282, "Thunder", "Yellow", "E", 0));
         CardList.Add(new Card(283, "Thunder", "Yellow", "T", 0));
         CardList.Add(new Card(284, "Thunder", "Yellow", "B", 0));
-        //
         CardList.Add(new Card(285, "Thunder", "Black", "1", 1));
         CardList.Add(new Card(286, "Thunder", "Black", "2", 2));
         CardList.Add(new Card(287, "Thunder", "Black", "3", 3));
@@ -327,7 +309,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(297, "Thunder", "Black", "E", 0));
         CardList.Add(new Card(298, "Thunder", "Black", "T", 0));
         CardList.Add(new Card(299, "Thunder", "Black", "B", 0));
-        //
         CardList.Add(new Card(300, "Dark", "Red", "1", 1));
         CardList.Add(new Card(301, "Dark", "Red", "2", 2));
         CardList.Add(new Card(302, "Dark", "Red", "3", 3));
@@ -343,7 +324,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(312, "Dark", "Red", "E", 0));
         CardList.Add(new Card(313, "Dark", "Red", "T", 0));
         CardList.Add(new Card(314, "Dark", "Red", "B", 0));
-        //
         CardList.Add(new Card(315, "Dark", "Blue", "1", 1));
         CardList.Add(new Card(316, "Dark", "Blue", "2", 2));
         CardList.Add(new Card(317, "Dark", "Blue", "3", 3));
@@ -359,7 +339,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(327, "Dark", "Blue", "E", 0));
         CardList.Add(new Card(328, "Dark", "Blue", "T", 0));
         CardList.Add(new Card(329, "Dark", "Blue", "B", 0));
-        //
         CardList.Add(new Card(330, "Dark", "Brown", "1", 1));
         CardList.Add(new Card(331, "Dark", "Brown", "2", 2));
         CardList.Add(new Card(332, "Dark", "Brown", "3", 3));
@@ -375,7 +354,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(342, "Dark", "Brown", "E", 0));
         CardList.Add(new Card(343, "Dark", "Brown", "T", 0));
         CardList.Add(new Card(344, "Dark", "Brown", "B", 0));
-        //
         CardList.Add(new Card(345, "Dark", "Yellow", "1", 1));
         CardList.Add(new Card(346, "Dark", "Yellow", "2", 2));
         CardList.Add(new Card(347, "Dark", "Yellow", "3", 3));
@@ -391,7 +369,6 @@ public class CardDatabase : MonoBehaviour
         CardList.Add(new Card(357, "Dark", "Yellow", "E", 0));
         CardList.Add(new Card(358, "Dark", "Yellow", "T", 0));
         CardList.Add(new Card(359, "Dark", "Yellow", "B", 0));
-        //
         CardList.Add(new Card(360, "Dark", "Black", "1", 1));
         CardList.Add(new Card(361, "Dark", "Black", "2", 2));
         CardList.Add(new Card(362, "Dark", "Black", "3", 3));

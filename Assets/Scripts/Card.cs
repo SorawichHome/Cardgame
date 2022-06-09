@@ -1,22 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable]
 
 public class Card
 {
-    public int cardID;
-    public string CardElement;
-    public string CardColor;
-    public string CardRank;
-    public int Cardscore;
+    public int id;
+    public string element;
+    public string color;
+    public string rank;
+    public int scorerank;
 
-    public Card(int ID, string Element, string Color, string Rank, int Score)
+    public Card()
     {
-        cardID = ID;
-        CardElement = Element;
-        CardColor = Color;
-        CardRank = Rank;
-        Cardscore = Score;
 
     }
+
+    public Card(int Id, string Element, string Color, string Rank, int Score)
+    {
+        id = Id;
+        element = Element;
+        color = Color;
+        rank = Rank;
+        scorerank = Score;
+    }
 }
+
+
