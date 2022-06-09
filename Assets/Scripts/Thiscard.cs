@@ -18,6 +18,9 @@ public class Thiscard : MonoBehaviour
     public Text elementT;
     public Text colorT;
     public Text rankT;
+
+    public bool CardBack;
+    public static bool staticCardBack;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +39,7 @@ public class Thiscard : MonoBehaviour
         elementT.text = "" + element;
         colorT.text = "" + color;
         rankT.text = "" + rank;
+
+        staticCardBack = CardBack;
     }
 }
