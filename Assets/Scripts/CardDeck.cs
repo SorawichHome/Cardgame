@@ -27,7 +27,7 @@ public class CardDeck : MonoBehaviour
             randomCard = Random.Range(0, 374);
             deck.Add(CardDatabase.CardList[randomCard]);
         }
-        //StartCoroutine(startgame);
+        StartCoroutine(startgame());
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class CardDeck : MonoBehaviour
 
     IEnumerator startgame()
     {
-        for(int i =0; i<= Maxcardonhand; i++)
+        for(int i =0; i< Maxcardonhand; i++)
         {
             yield return new WaitForSeconds(1);
             Instantiate(CardonHand, transform.position, transform.rotation);

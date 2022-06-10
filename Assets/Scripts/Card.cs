@@ -11,11 +11,6 @@ public class Card
     public string rank;
     public int scorerank;
 
-    public Card()
-    {
-
-    }
-
     public Card(int Id, string Element, string Color, string Rank, int Score)
     {
         id = Id;

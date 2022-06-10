@@ -32,6 +32,7 @@ public class Thiscard : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        thisid = Random.Range(0, 374);
         thiscard.Add(CardDatabase.CardList[thisid]);
         Numberofcardindeck = CardDeck.Decksize;
     }
@@ -63,12 +64,12 @@ public class Thiscard : MonoBehaviour
         colorT.text = "" + color;
         rankT.text = "" + rank;
 
-        if (this.tag == "Clone")
-        {
-            thiscard[0] = CardDeck.StaticDeck[Numberofcardindeck - 1];
-            Numberofcardindeck -= 1;
-            CardDeck.Decksize -= 1;
-            this.tag = "Untagged";
-        }
+        //if (this.tag == "Clone")
+        //{
+        //    thiscard[0] = CardDeck.StaticDeck[Numberofcardindeck - 1];
+        //    Numberofcardindeck -= 1;
+        //    CardDeck.Decksize -= 1;
+        //    this.tag = "Untagged";
+        //}
     }
 }

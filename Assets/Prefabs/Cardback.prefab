@@ -434,7 +434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5be300816551fa48bba3d4ed546612a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deck: {fileID: 0}
+  deck: {fileID: 1810892805820127499, guid: b7f2c22aca68dd24ab7d46cea8ae12e5, type: 3}
   It: {fileID: 5857877899965561906}
 --- !u!1 &6073551735278711259
 GameObject:

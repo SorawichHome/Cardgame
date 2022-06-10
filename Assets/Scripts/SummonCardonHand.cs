@@ -17,7 +17,6 @@ public class SummonCardonHand : MonoBehaviour
     {
         Hand = GameObject.Find("Hand");
         Card.transform.SetParent(Hand.transform);
-        //Card.transform.localScale = Vector3.one;
         Card.transform.position = new Vector3(transform.position.x, transform.position.y,0);
         Card.transform.eulerAngles =new Vector3 (30, 0,0);
     }
