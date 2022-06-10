@@ -20,8 +20,10 @@ public class Thiscard : MonoBehaviour
     public Text colorT;
     public Text rankT;
 
-    public bool CardBack;
-    public static bool staticCardBack = false;
+    public GameObject Cardcover;
+
+    public bool CardBack = false;
+    //public static bool staticCardBack = false;
 
     public GameObject Hand;
     public int Numberofcardindeck = 375;
@@ -32,17 +34,24 @@ public class Thiscard : MonoBehaviour
     {
         thiscard.Add(CardDatabase.CardList[thisid]);
         Numberofcardindeck = CardDeck.Decksize;
-        staticCardBack = true;
     }
 
     // Update is called once per frame
     void Update()
     {
         Hand = GameObject.Find("Hand");
-        staticCardBack = CardBack;
         if (this.transform.parent == Hand.transform.parent)
         {
             CardBack = false;
+        }
+
+        if(CardBack == true)
+        {
+            Cardcover.SetActive(true);
+        }
+        else
+        {
+            Cardcover.SetActive(false);
         }
         id = thiscard[0].id;
         element = thiscard[0].element;
@@ -54,6 +63,12 @@ public class Thiscard : MonoBehaviour
         colorT.text = "" + color;
         rankT.text = "" + rank;
 
-        
+        if (this.tag == "Clone")
+        {
+            thiscard[0] = CardDeck.StaticDeck[Numberofcardindeck - 1];
+            Numberofcardindeck -= 1;
+            CardDeck.Decksize -= 1;
+            this.tag = "Untagged";
+        }
     }
 }

@@ -6,12 +6,16 @@ public class CardDeck : MonoBehaviour
 {
     public List<Card> deck = new List<Card>();
     public List<Card> Deckcontainer = new List<Card>();
+    public static List<Card> StaticDeck = new List<Card>();
     public int randomCard;
     public static int Decksize = 374;
     public GameObject Showdeck;
 
     public GameObject Cardback;
     public GameObject Deck;
+    public GameObject CardonHand;
+
+    int Maxcardonhand = 5;
 
     public GameObject[] Clones;
     // Start is called before the first frame update
@@ -23,24 +27,27 @@ public class CardDeck : MonoBehaviour
             randomCard = Random.Range(0, 374);
             deck.Add(CardDatabase.CardList[randomCard]);
         }
+        //StartCoroutine(startgame);
     }
 
     // Update is called once per frame
     void Update()
     {
+        StaticDeck = deck;
         if(Decksize <= 0)
         {
             Showdeck.SetActive(false);
         }
     }
 
-    //IEnumerator Startgame()
-    //{
-    //    for(int i =0; i <= 5; i++)
-    //    {
-
-    //    }
-    //}
+    IEnumerator startgame()
+    {
+        for(int i =0; i<= Maxcardonhand; i++)
+        {
+            yield return new WaitForSeconds(1);
+            Instantiate(CardonHand, transform.position, transform.rotation);
+        }
+    }
 
     public void Shuffle()
     {
@@ -51,6 +58,8 @@ public class CardDeck : MonoBehaviour
             deck[i] = deck[randomIndex];
             deck[randomIndex] = Deckcontainer[0];
         }
+
+        Instantiate(Cardback, transform.position, transform.rotation);
     }
     
 
