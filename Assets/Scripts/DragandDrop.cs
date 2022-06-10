@@ -1,32 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class DragandDrop : MonoBehaviour
+public class DragandDrop : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragHandler
 {
-    bool Isdragging = false;
-    // Start is called before the first frame update
-    void Start()
+    public Transform parentToreturnTo = null;
+    public void OnBeginDrag(PointerEventData eventData)
     {
+        parentToreturnTo = this.transform.parent;
+        this.transform.SetParent(this.transform.parent.parent);
         
     }
 
-    public void StartDrag()
+    public void OnDrag(PointerEventData eventData)
     {
-        Isdragging = true;
+        this.transform.position = eventData.position;
     }
 
-    public void EndDrag()
+    public void OnEndDrag(PointerEventData eventData)
     {
-        Isdragging = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Isdragging)
-        {
-            transform.position = (new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-        }
+        this.transform.SetParent(parentToreturnTo);
     }
 }

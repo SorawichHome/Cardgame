@@ -23,7 +23,6 @@ public class Thiscard : MonoBehaviour
     public GameObject Cardcover;
 
     public bool CardBack = false;
-    //public static bool staticCardBack = false;
 
     public GameObject Hand;
     public int Numberofcardindeck = 375;
