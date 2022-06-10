@@ -8,6 +8,7 @@ public class CardDeck : MonoBehaviour
     public List<Card> Deckcontainer = new List<Card>();
     public int randomCard;
     int Decksize = 374;
+    public GameObject Showdeck;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,10 @@ public class CardDeck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(Decksize <= 0)
+        {
+            Showdeck.SetActive(false);
+        }
     }
 
     public void Shuffle()

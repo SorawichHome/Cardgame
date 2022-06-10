@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cardback : MonoBehaviour
 {
-    //public GameObject BackCard;
+    public GameObject backcard;
     
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,10 @@ public class Cardback : MonoBehaviour
         if(Thiscard.staticCardBack == true)
         {
             backcard.SetActive(true);
+        }
+        else
+        {
+            backcard.SetActive(false);
         }
     }
 }
