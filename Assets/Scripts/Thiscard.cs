@@ -21,44 +21,29 @@ public class Thiscard : MonoBehaviour
     public Text rankT;
 
     public bool CardBack;
-    public static bool staticCardBack;
+    public static bool staticCardBack = false;
+
+    public GameObject Hand;
+    public int Numberofcardindeck = 375;
 
     
     // Start is called before the first frame update
     void Start()
     {
-        //thisid = Random.Range(0, 374);
-        //for (int i = 0; i <= maxIdcard; i++)
-        //{
-        //    i = thisid;
-
-        //}
         thiscard.Add(CardDatabase.CardList[thisid]);
-        //id = thiscard[thisid].id;
-        //element = thiscard[thisid].element;
-        //color = thiscard[thisid].color;
-        //rank = thiscard[thisid].rank;
-        //scorerank = thiscard[thisid].scorerank;
+        Numberofcardindeck = CardDeck.Decksize;
+        staticCardBack = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Randomid = 0;
-        //for (int i = 0; i <= maxIdcard; i++)
-        //{
-        //    Randomid = Random.Range(0, maxIdcard);
-        //    Randomid = thisid;
-        //    if(Randomid == thisid)
-        //    {
-        //        id = thiscard[Randomid].id;
-        //        element = thiscard[Randomid].element;
-        //        color = thiscard[Randomid].color;
-        //        rank = thiscard[Randomid].rank;
-        //        scorerank = thiscard[Randomid].scorerank;
-        //        break;
-        //    }
-        //}
+        Hand = GameObject.Find("Hand");
+        staticCardBack = CardBack;
+        if (this.transform.parent == Hand.transform.parent)
+        {
+            CardBack = false;
+        }
         id = thiscard[0].id;
         element = thiscard[0].element;
         color = thiscard[0].color;
@@ -69,6 +54,6 @@ public class Thiscard : MonoBehaviour
         colorT.text = "" + color;
         rankT.text = "" + rank;
 
-        staticCardBack = CardBack;
+        
     }
 }

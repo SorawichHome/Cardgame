@@ -7,8 +7,13 @@ public class CardDeck : MonoBehaviour
     public List<Card> deck = new List<Card>();
     public List<Card> Deckcontainer = new List<Card>();
     public int randomCard;
-    int Decksize = 374;
+    public static int Decksize = 374;
     public GameObject Showdeck;
+
+    public GameObject Cardback;
+    public GameObject Deck;
+
+    public GameObject[] Clones;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +34,14 @@ public class CardDeck : MonoBehaviour
         }
     }
 
+    //IEnumerator Startgame()
+    //{
+    //    for(int i =0; i <= 5; i++)
+    //    {
+
+    //    }
+    //}
+
     public void Shuffle()
     {
         for(int i = 0; i <= Decksize; i++)
@@ -39,4 +52,6 @@ public class CardDeck : MonoBehaviour
             deck[randomIndex] = Deckcontainer[0];
         }
     }
+    
+
 }

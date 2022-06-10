@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2146591616103370858
 RectTransform:
@@ -95,7 +95,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2146591616205698748
 RectTransform:
@@ -170,7 +170,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2146591616876680604
 RectTransform:
@@ -249,7 +249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2146591616943283981
 RectTransform:
@@ -330,7 +330,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &2146591617479645481
 RectTransform:
@@ -412,10 +412,13 @@ MonoBehaviour:
   color: 
   rank: 
   scorerank: 0
+  maxIdcard: 374
+  Randomid: 0
   elementT: {fileID: 2146591616103370869}
   colorT: {fileID: 2146591616876680607}
   rankT: {fileID: 2146591616943283980}
   CardBack: 1
+  Hand: {fileID: 0}
 --- !u!114 &2146591617479645493
 MonoBehaviour:
   m_ObjectHideFlags: 0
